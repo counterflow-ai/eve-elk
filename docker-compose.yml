@@ -24,7 +24,7 @@ services:
       - ./logstash/pipeline/:/usr/share/logstash/pipeline/    
 
   evebox:
-    image: counterflow/evebox
+    image: counterflow/evebox:devel
     container_name: evebox
     depends_on: ['elasticsearch']
     ports: ['5636:5636']
